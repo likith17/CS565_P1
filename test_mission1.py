@@ -9,6 +9,14 @@ class TestMission1(unittest.TestCase):
                 ["1","1","0","0","0"],
                 ["0","0","0","0","0"]]
         self.assertEqual(sol.mission1(grid), 1)  # Expected output: 1
+    
+    def test_mission2(self):
+        sol = Solution()
+        grid2 = [["1","1","0","1","0"],
+                ["1","1","0","1","0"],
+                ["1","1","0","0","0"],
+                ["0","0","1","1","1"]]
+        self.assertEqual(sol.mission1(grid2), 3)  # Expected output: 1
 
 if __name__ == "__main__":
     unittest.main()
